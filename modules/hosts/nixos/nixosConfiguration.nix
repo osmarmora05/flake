@@ -1,0 +1,5 @@
+{ ... }: {
+  flake.nixosModules.nixosConfiguration = { pkgs, ... }: {
+
+  };
+}

@@ -1,0 +1,33 @@
+{
+  description = "Master flake for osmarmora05 nix config";
+
+  inputs = {
+    # System
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
+
+    # wlctl
+    wlctl.url = "github:aashish-thapa/wlctl";
+
+    # vicinae-extensions
+    vicinae-extensions.url = "github:vicinaehq/extensions";
+
+    # helium-flake
+    helium-flake.url = "github:oxcl/nix-flake-helium-browser";
+    helium-flake.inputs.nixpkgs.follows = "nixpkgs";
+
+    # dms
+    dms.url = "github:AvengeMedia/DankMaterialShell/stable";
+    dms.inputs.nixpkgs.follows = "nixpkgs";
+    dms-plugin-registry.url = "github:AvengeMedia/dms-plugin-registry";
+    dms-plugin-registry.inputs.nixpkgs.follows = "nixpkgs";
+
+    # duplicati
+    nixpkgs-duplicati.url = "https://github.com/NixOS/nixpkgs/archive/05bbf675397d5366259409139039af8077d695ce.tar.gz";
+
+    # Flake parts
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    import-tree.url = "github:vic/import-tree";
+    wrappers.url = "github:BirdeeHub/nix-wrapper-modules";
+  };
+  outputs = inputs: inputs.flake-parts.lib.mkFlake { inherit inputs; } (inputs.import-tree ./modules);
+}
