@@ -5,6 +5,9 @@
     # System
     nixpkgs.url = "github:nixos/nixpkgs/nixos-26.05";
 
+    # nix-multiverse
+    multiverse.url = "github:fzakaria/nixpkgs-multiverse";
+
     # wlctl
     wlctl.url = "github:aashish-thapa/wlctl";
 
@@ -20,9 +23,6 @@
     dms.inputs.nixpkgs.follows = "nixpkgs";
     dms-plugin-registry.url = "github:AvengeMedia/dms-plugin-registry";
     dms-plugin-registry.inputs.nixpkgs.follows = "nixpkgs";
-
-    # duplicati
-    nixpkgs-duplicati.url = "https://github.com/NixOS/nixpkgs/archive/05bbf675397d5366259409139039af8077d695ce.tar.gz";
 
     # Flake parts
     flake-parts.url = "github:hercules-ci/flake-parts";

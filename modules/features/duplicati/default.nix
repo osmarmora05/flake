@@ -1,28 +1,16 @@
 {
-  inputs,
   moduleWithSystem,
   ...
 }:
 {
   flake.nixosModules.duplicati = moduleWithSystem (
-    { self', ... }: {
-      environment.systemPackages = with self'.packages; [
-        nixpkgs-duplicati
-      ];
+    { ... }:
+    {
+      multiverse = {
+        pins = {
+          duplicati = "2.1.0.2";
+        };
+      };
     }
   );
-  perSystem =
-    {
-      pkgs,
-      inputs',
-      ...
-    }:
-    {
-      packages.nixpkgs-duplicati = inputs.wrappers.lib.wrapPackage (
-        { ... }: {
-          inherit pkgs;
-          package = inputs'.nixpkgs-duplicati.legacyPackages.duplicati;
-        }
-      );
-    };
 }

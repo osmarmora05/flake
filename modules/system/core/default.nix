@@ -9,6 +9,7 @@
         hardware
         locale
         flatpak
+        multiverse
       ];
     in
     {
