@@ -19,9 +19,9 @@
     helium-flake.inputs.nixpkgs.follows = "nixpkgs";
 
     # dms
-    dms.url = "github:AvengeMedia/DankMaterialShell/stable";
+    dms.url = "github:duxlabs-dev/dux-shell/stable";
     dms.inputs.nixpkgs.follows = "nixpkgs";
-    dms-plugin-registry.url = "github:AvengeMedia/dms-plugin-registry";
+    dms-plugin-registry.url = "github:duxlabs-dev/dux-plugin-registry";
     dms-plugin-registry.inputs.nixpkgs.follows = "nixpkgs";
 
     # Flake parts
