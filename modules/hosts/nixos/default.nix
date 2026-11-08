@@ -17,6 +17,7 @@
       dev
       backup
       video
+      gaming
     ];
   };
 }
