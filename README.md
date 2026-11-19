@@ -27,13 +27,13 @@ cd flake && sudo mv ./* /etc/nixos/
 3. Install the system:
 
 ```bash
-cd /etc/nixos/ && sudo nixos-rebuild switch --upgrade-all --flake --impure .
+cd /etc/nixos/ && sudo nixos-rebuild switch --upgrade-all --impure --flake .
 ```
 
 ### B. Build from remote
 
 ```bash
-sudo nixos-rebuild switch --impure --flake --upgrade-all "github:osmarmora05/flake.git"
+sudo nixos-rebuild switch --upgrade-all --impure --flake "github:osmarmora05/flake.git"
 ```
 
 # Acknowledgments
