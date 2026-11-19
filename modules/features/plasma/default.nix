@@ -5,7 +5,6 @@
   flake.nixosModules.plasma =
     {
       pkgs,
-      lib,
       ...
     }:
     {
@@ -13,5 +12,8 @@
         desktopManager.plasma6.enable = true;
         displayManager.plasma-login-manager.enable = true;
       };
+      environment.systemPackages = with pkgs; [
+        kdePackages.karousel
+      ];
     };
 }
