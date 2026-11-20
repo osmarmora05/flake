@@ -21,6 +21,7 @@
       # container
       # lang
       sync
+      media-player
     ];
   };
 }
