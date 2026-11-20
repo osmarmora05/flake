@@ -10,6 +10,7 @@
         locale
         flatpak
         multiverse
+        nix-ld
       ];
     in
     {
