@@ -7,20 +7,9 @@
       ...
     }:
     {
-      boot.loader = {
-        grub = {
-          enable = true;
-          efiSupport = true;
-          devices = [ "nodev" ];
-          useOSProber = true;
-        };
-
-        efi = {
-          efiSysMountPoint = "/boot";
-          canTouchEfiVariables = true;
-        };
-
-        systemd-boot.enable = false;
-      };
+      boot.loader.systemd-boot.enable = true;
+      boot.loader.efi.canTouchEfiVariables = true;
+      boot.loader.efi.efiSysMountPoint = "/boot";
+      boot.loader.systemd-boot.configurationLimit = 10;
     };
 }
