@@ -24,6 +24,9 @@
     dms-plugin-registry.url = "github:duxlabs-dev/dux-plugin-registry";
     dms-plugin-registry.inputs.nixpkgs.follows = "nixpkgs";
 
+    # nvim osmarmora05's
+    nvim.url = "github:osmarmora05/dotfiles/main?dir=nvim/.config/nvim";
+
     # Flake parts
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";

@@ -1,14 +1,20 @@
 {
+  self,
   moduleWithSystem,
   ...
 }:
 {
   flake.nixosModules.editor = moduleWithSystem (
     { pkgs, ... }:
+    let
+      modules = with self.nixosModules; [
+        nvim
+      ];
+    in
     {
+      imports = modules;
       environment.systemPackages = with pkgs; [
         zed-editor
-        neovim
         vscodium
       ];
     }
