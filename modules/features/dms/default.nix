@@ -20,7 +20,6 @@
         };
 
         plugins = {
-          mediaFrame.enable = true;
           musicTheme.enable = true;
           cavaVisualizer.enable = true;
         };
