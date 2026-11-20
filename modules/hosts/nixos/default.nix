@@ -19,6 +19,7 @@
       video
       gaming
       # container
+      # lang
     ];
   };
 }

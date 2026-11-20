@@ -12,13 +12,7 @@
     {
       imports = modules;
       environment.systemPackages = with pkgs; [
-        nodejs
-        pnpm
-        cargo
-        rustc
-        python315
         mise
-        uv
       ];
     }
   );
