@@ -20,6 +20,7 @@
       gaming
       # container
       # lang
+      sync
     ];
   };
 }
