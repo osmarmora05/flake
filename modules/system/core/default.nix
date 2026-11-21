@@ -11,6 +11,7 @@
         flatpak
         multiverse
         nix-ld
+        portal
       ];
     in
     {
