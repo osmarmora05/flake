@@ -22,6 +22,7 @@
       # lang
       sync
       media-player
+      appimage
     ];
   };
 }
