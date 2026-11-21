@@ -9,7 +9,7 @@
       ...
     }:
     {
-      time.timeZone = "America/nicaragua";
+      time.timeZone = "America/Managua";
       i18n = {
         defaultLocale = "es_MX.UTF-8";
       };
