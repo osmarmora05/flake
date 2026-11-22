@@ -12,6 +12,7 @@
         multiverse
         nix-ld
         portal
+        gnome-services
       ];
     in
     {
