@@ -20,7 +20,7 @@
       gaming
       # container
       # lang
-      sync
+      # sync
       media-player
       appimage
     ];
