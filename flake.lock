@@ -144,6 +144,26 @@
         "type": "github"
       }
     },
+    "metrolist": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1795308414,
+        "narHash": "sha256-T1iu0j4pPVmM8wfseLVaiZENeXR02exlT7Qs9TJl/E0=",
+        "owner": "MetrolistGroup",
+        "repo": "Metrolist",
+        "rev": "13dbd5225b4e3e96fa2c7671588efad877884c94",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MetrolistGroup",
+        "repo": "Metrolist",
+        "type": "github"
+      }
+    },
     "multiverse": {
       "locked": {
         "lastModified": 1795019436,
@@ -299,6 +319,7 @@
         "flake-parts": "flake-parts",
         "helium-flake": "helium-flake",
         "import-tree": "import-tree",
+        "metrolist": "metrolist",
         "multiverse": "multiverse",
         "nixpkgs": "nixpkgs",
         "nvim": "nvim",
