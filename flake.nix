@@ -27,6 +27,10 @@
     # nvim osmarmora05's
     nvim.url = "github:osmarmora05/dotfiles/main?dir=nvim/.config/nvim";
 
+    # metrolist
+    metrolist.url = "github:MetrolistGroup/Metrolist";
+    metrolist.inputs.nixpkgs.follows = "nixpkgs";
+
     # Flake parts
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
