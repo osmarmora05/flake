@@ -1,5 +1,8 @@
 _Another dendritic Nix configuration, BTW :v_
 
+![KDE](./repo/showcase/1.webp)
+![niri](./repo/showcase/2.webp)
+
 # Usage
 
 Clone the repo:
