@@ -23,6 +23,7 @@
       # sync
       media-player
       appimage
+      book
     ];
   };
 }
